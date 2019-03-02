@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dólar NULLbank</title>
+
+        <meta name="description" content="Descubra quanto vale o dólar do NullBank nesse momento">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#6E2B77">
+
+        <link rel="icon" href="favicon.png">        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <a href=".">
+                <h1>Dólar NULLbank</h1>
+            </a>
+        </header>
+
+        <div id="main">
+            <form action="#" spellcheck="false">
+                <div class="moeda left">
+                    <label for="usd">US$</label>
+                    <input type="text" id="usd" onblur="usdToBrl()" disabled>
+                </div>
+
+                <div class="moeda right">
+                    <label for="brl">R$</label>
+                    <input type="text" id="brl" onblur="brlToUsd()" disabled>
+                </div>
+
+                <div id="vars">
+                    <label for="ptax">Dólar PTAX</label>
+                    <input type="text" id="ptax">
+
+                    <label for="iof">IOF (%)</label>
+                    <input type="text" id="iof">
+
+                    <label for="spread">Spread (%)</label>
+                    <input type="text" id="spread">
+                </div>
+
+            </form>
+        </div>
+        
+
+        <script src="script.js"></script>
+    </body>
+</html>
